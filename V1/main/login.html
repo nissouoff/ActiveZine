@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation de Cercles et Gaming</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/V1/css/login.css">
+</head>
+<body>
+
+    <div class="overview">
+        <p id="message">Votre compte a etes créer avec_succés</p>
+    </div>
+    <img id="logo" src="/V1/assest/logo.png" alt="">
+    <!-- Container des slogans et icônes de gaming -->
+    <div class="circle-container">
+        <div id="circle1" class="circle"></div>
+        <div id="circle2" class="circle"></div>
+        <div id="circle3" class="circle"></div>
+    </div>
+
+    <div class="box">
+
+        <h3 id="tit">Welcome to ActiveZone</h3>
+
+        <input type="email" placeholder="Email" id="email">
+        <input type="password" placeholder="Mot de passe" id="password">
+
+        <p id="forget">Mot de passe oublie</p>
+
+        <p id="error2">e</p> <br>
+
+        <button id="connxion">Connexion</button>
+
+        <div>
+            <p style="color: #fff;">Si vous n'avez pas un compte </p>
+            <a href="#" id="singup">Creer un compte</a>
+        </div>
+   
+    </div>
+
+    <div class="box2">
+
+        <h3 id="tit-inc">Welcome to ActiveZone</h3>
+         
+        <input type="text" placeholder="Usernam" id="username">
+        <input type="text" placeholder="Prenom dans ActiveZone" id="name">
+        <input type="email" placeholder="Email" id="emaill">
+        <input type="password" placeholder="Mot de passe" id="passwordd">
+        <input type="password" placeholder="Confirmer votre mot de passe" id="confirm-passwordd">
+
+        <button id="inc">Inscription</button>
+        <p id="error"></p>
+
+        <div>
+            <p style="color: #fff;">Si vous avez pas  compte </p>
+            <a href="#" id="login">Connectez-vous</a>
+        </div>
+   
+    </div>
+
+
+
+</body>
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-database.js"></script>
+<script src="/V1/js/login.js"></script>
+</html>
