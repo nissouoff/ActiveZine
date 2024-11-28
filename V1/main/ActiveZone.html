@@ -1,0 +1,107 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ActiveZone</title>
+    <link rel="stylesheet" href="/V1/css/ActiveZone.css">
+</head>
+<body>
+    <div class="header">
+        <img id="logo" src="/V1/assest/logo.png" alt="">
+        <p>ActiveZone____Completer l'inscription</p>
+    </div>
+
+    <div class="tit" id="tit">Selectionner votre sport dans lequel tu veux t'inscrire</div>
+
+    <div class="sport" id="sport">
+        <div class="grid">
+            <div class="grid-item">
+                <img src="/V1/assest/5.jpg" alt="Sport 1">
+                <div class="text-overlay">Foot Ball</div>
+            </div>
+            <div class="grid-item">
+                <img src="/V1/assest/3.jpg" alt="Sport 2">
+                <div class="text-overlay">Hand Ball</div>
+            </div>
+            <div class="grid-item">
+                <img src="/V1/assest/6.jpg" alt="Sport 3">
+                <div class="text-overlay">Basket Ball</div>
+            </div>
+            <div class="grid-item">
+                <img src="/V1/assest/4.jpg" alt="Sport 4">
+                <div class="text-overlay">Volley Ball</div>
+            </div>
+            <div class="grid-item">
+                <img src="/V1/assest/7.jpg" alt="Sport 5">
+                <div class="text-overlay">Gym</div>
+            </div>
+            <div class="grid-item">
+                <img src="/V1/assest/1.jpg" alt="Sport 6">
+                <div class="text-overlay">Judo</div>
+            </div>
+            <div class="grid-item">
+                <img src="/V1/assest/2.jpg" alt="Sport 7">
+                <div class="text-overlay">Natation</div>
+            </div>
+
+            <div class="grid-item">
+                <img src="/V1/assest/8.jpg" alt="Sport 8">
+                <div class="text-overlay">Planche a voile</div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="cta" id="cpa">
+        <button class="modern-button" id="action-button" style="display: none;">Continuer</button>
+    </div>
+
+    <div class="formu" style="display: none;">
+        <form id="user-form">
+            <div class="form-group">
+                <label for="first-name">Prénom</label>
+                <input type="text" id="first-name" required>
+            </div>
+            <div class="form-group">
+                <label for="last-name">Nom</label>
+                <input type="text" id="last-name" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Numéro de téléphone</label>
+                <input type="tel" id="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="birth-date">Date de naissance</label>
+                <input type="date" id="birth-date" required>
+            </div>
+            <div class="form-group">
+                <label for="weight">Poids (kg)</label>
+                <input type="number" id="weight" required>
+            </div>
+            <div class="form-group">
+                <label for="height">Taille (cm)</label>
+                <input type="number" id="height" required>
+            </div>
+            <div class="form-group">
+                <label for="national-id">Numéro de carte nationale</label>
+                <input type="text" id="national-id" required>
+            </div>
+            <div class="form-group">
+                <label for="national-card-photo">Importer la photo de la carte nationale</label>
+                <input type="file" id="national-card-photo" accept="image/*" required>
+            </div>
+            <button type="button" id="confirm-button" class="modern-button">Confirmer</button>
+        </form>
+    </div>
+    
+    
+    
+    
+</body>
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-storage.js"></script>
+<script src="/V1/js/ActiveZone.js"></script>
+
+</html>

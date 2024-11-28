@@ -85,11 +85,9 @@ document.getElementById("inc").addEventListener("click", () => {
     const error = document.getElementById("error");
     const overview = document.querySelector(".overview");
 
-    // Réinitialiser le message d'erreur
     error.style.display = "none";
     error.textContent = "";
 
-    // Vérification des champs
     if (!username || !name || !emaill || !passwordd || !confirm_passwordd) {
         error.textContent = "Veuillez remplir tous les champs.";
         error.style.color = "red";
@@ -104,7 +102,6 @@ document.getElementById("inc").addEventListener("click", () => {
         return;
     }
 
-    // Créer un utilisateur avec Firebase Auth
     auth.createUserWithEmailAndPassword(emaill, passwordd)
         .then((userCredential) => {
 
@@ -166,11 +163,11 @@ document.getElementById("connxion").addEventListener("click", () => {
     const password = document.getElementById("password").value.trim();
     const error2 = document.getElementById("error2");
 
-    // Réinitialiser les messages d'erreur
+   
     error2.style.display = "none";
     error2.textContent = "";
 
-    // Vérifier les champs vides
+    
     if (!email || !password) {
         error2.textContent = "Veuillez remplir tous les champs.";
         error2.style.color = "red";
@@ -178,16 +175,16 @@ document.getElementById("connxion").addEventListener("click", () => {
         return;
     }
 
-    // Authentification avec Firebase
+  
     auth.signInWithEmailAndPassword(email, password)
         .then((userCredential) => {
             box.style.display = "none";
-            // Connexion réussie
+            
             console.log("Connexion réussie !");
-            window.location.href = "V1/main/home.html"; // Redirection vers la page souhaitée
+            window.location.href = "/V1/main/ActiveZone.html"; 
         })
         .catch((err) => {
-            // Gérer les erreurs
+           
             let message = "";
             switch (err.code) {
                 case "auth/user-not-found":

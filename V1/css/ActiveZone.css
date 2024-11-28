@@ -1,0 +1,217 @@
+/* Général */
+body {
+    background: #1e1e2f; /* Couleur plus moderne et uniforme */
+    color: #ffffff; /* Texte clair */
+    font-family: 'Arial', sans-serif; /* Police simple et professionnelle */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(45deg, #2703d8, #5b3ef0); /* Gradient moderne */
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.header #logo {
+    width: 50px;
+    margin-right: 10px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.header p {
+    font-size: 17px;
+    font-weight: bold;
+    color: #fff;
+    margin: 0;
+    text-align: center;
+    flex: 1;
+}
+
+/* Titre */
+.tit {
+    margin: 20px auto;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: rgba(39, 3, 216, 0.8);
+    border-radius: 8px;
+    color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    max-width: 800px;
+}
+
+/* Section sports */
+.sport {
+    padding: 30px 20px;
+    display: flex;
+    justify-content: center;
+    background: rgba(39, 3, 216, 0.1); /* Transparence moderne */
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 1000px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 colonnes */
+    gap: 20px; /* Espacement moderne */
+}
+
+.grid-item {
+    position: relative;
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Ombre élégante */
+    transition: transform 0.3s ease;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.grid-item:hover img {
+    transform: scale(1.1);
+    filter: brightness(0.8);
+}
+
+.grid-item:hover {
+    transform: scale(1.05);
+}
+
+.grid-item .text-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 10px;
+}
+
+.grid-item:hover .text-overlay {
+    opacity: 1;
+}
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 colonnes sur mobiles */
+    }
+
+    .tit {
+        font-size: 18px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .grid {
+        grid-template-columns: repeat(1, 1fr); /* 1 colonne sur très petits écrans */
+    }
+
+    .header p {
+        font-size: 16px;
+    }
+
+    .tit {
+        font-size: 16px;
+    }
+}
+
+.cta {
+    text-align: center; /* Centrer le bouton */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.modern-button {
+    background: linear-gradient(90deg, #4CAF50, #009688); /* Gradient moderne */
+    color: #fff; /* Texte blanc */
+    border: none;
+    padding: 15px 30px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 50px; /* Forme arrondie */
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Ombre subtile */
+    transition: all 0.3s ease; /* Animation fluide */
+    letter-spacing: 1px; /* Espacement des lettres pour un effet élégant */
+}
+
+.modern-button:hover {
+    transform: scale(1.1); /* Légère agrandissement */
+    background: linear-gradient(90deg, #009688, #4CAF50); /* Inversion du gradient */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Ombre plus prononcée */
+}
+
+.modern-button:active {
+    transform: scale(1.05); /* Réduction subtile au clic */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Ombre réduite */
+}
+
+.grid-item.selected img {
+    transform: scale(1.2); /* Conserve le zoom */
+    filter: brightness(0.8); /* Conserve l'obscurcissement */
+}
+
+.grid-item.selected .text-overlay {
+    opacity: 1; /* Texte toujours visible */
+}
+
+.formu {
+    margin: 20px auto;
+    max-width: 600px;
+    background: #2703d84b;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    margin-top: 15px;
+    width: 100%;
+}
