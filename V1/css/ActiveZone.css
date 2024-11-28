@@ -215,3 +215,77 @@ button {
     margin-top: 15px;
     width: 100%;
 }
+
+.user-data-container {
+    max-width: 800px;
+    margin: 20px auto;
+    background: #2703d887;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.user-data-container h2 {
+    text-align: center;
+    color: #2703d8;
+}
+
+.user-profile {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.user-profile div {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.user-profile div span {
+    font-weight: bold;
+    color: #2703d8;
+}
+
+.profile-photo {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.profile-photo img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid #2703d8;
+}
+
+.confirm {
+    color: #eb5f02;
+}
+
+#close-button {
+    position: absolute;
+    top: 100px;
+    right: 130px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #eb0202;
+    cursor: pointer;
+}
+
+.message {
+    background: #2703d887 ;
+    align-items: center;
+    border-radius: 10px;
+    width: 600px;
+    padding: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}

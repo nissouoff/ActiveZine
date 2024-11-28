@@ -61,12 +61,14 @@ document.addEventListener("DOMContentLoaded", () => {
                 height,
                 nationalId,
                 nationalCardPhoto: photoURL,
+                sport,
             };
 
             const dbRef = database.ref(`Technique/${uid}`);
             await dbRef.set(data);
 
             alert("Les données ont été sauvegardées avec succès !");
+            window.location.href = "/V1/main/ActiveZone2.html";
             form.reset(); // Réinitialiser le formulaire
         } catch (error) {
             console.error("Erreur lors de l'enregistrement :", error);
